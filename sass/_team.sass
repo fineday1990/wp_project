@@ -1,0 +1,71 @@
+.team
+    padding-top: 130px
+    height: 756px
+.block
+    text-align: center
+    &__title
+        font-family: 'HelveticaNeueLTProLt', sans-serif
+        font-size: 34px
+        font-weight: 400
+        letter-spacing: 0.02em
+        color: #1d1e1f
+        margin: 0
+        margin-bottom: 12px
+
+    &__text
+        font-family: "Merriweather-LightItalic", sans-serif
+        font-size: 16px
+        font-weight: 300
+        font-style: italic
+        letter-spacing: 0.02em
+        color: #898888
+        margin: 0
+        margin-bottom: 130px
+.team__inner
+    display: flex
+    flex-direction: row
+    justify-content: space-evenly
+.team__item
+    text-align: center
+    &-img
+        margin-bottom: 30px
+    &-title
+        font-family: "HelveticaNeueLTProLt", sans-serif
+        font-size: 24px
+        font-weight: 400
+        letter-spacing: 0.02em
+        color: #464646
+        margin: 0
+        margin-bottom: 6px
+    &-text
+        font-family: "HelveticaNeueLTProLt", sans-serif
+        font-size: 13px
+        font-weight: 400
+        letter-spacing: 0.02em
+        color: #b3b3b3
+        margin: 0
+        margin-bottom: 20px
+
+.team__icon-box a
+    font-size: 26px
+    color: #e4e4e4
+    transition: 0.4s all
+.team__icon-box a:hover
+    color: #706b6b
+
+@media screen and (max-width: 769px)
+    .team
+        padding-top: 100px
+@media screen and (max-width: 376px)
+    .team__inner
+        flex-wrap: wrap
+    .block__text
+        margin-bottom: 60px
+    .team
+        padding-top: 60px
+    .team__item
+        width: 340px
+        margin-bottom: 40px
+        text-align: center
+    .team
+        height: auto

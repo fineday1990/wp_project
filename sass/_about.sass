@@ -2,7 +2,7 @@
     height: 1130px
     padding-top: 128px
     padding-bottom: 272px
-    background: url(../img/buildings.png) center bottom repeat-x, url(../img/buildingsblack.png) center bottom repeat-x, #1d1d1d
+    background: url(../img/buildings.png) center 101% repeat-x, url(../img/buildingsblack.png) center 101% repeat-x, #1d1d1d
     &__inner
         display: grid
         grid-template-rows: max-content max-content
@@ -32,3 +32,13 @@
         letter-spacing: 0.02em
         line-height: 22px
         color: #b7b7b7
+@media screen and (max-width: 769px)
+    .about__inner
+        grid-gap: 30px
+        grid-template-columns: max-content
+    .about
+        height: auto
+        padding-bottom: 200px
+@media screen and (max-width: 376px)
+    .about__item
+        max-width: 330px
