@@ -59,40 +59,77 @@
     justify-content: center
     align-items: center
     margin: 0 auto 206px
-
-@media screen and (max-width: 376px)
+@media screen and (max-width: 1201px)
+    .header__title
+        padding-top: 160px
+@media screen and (max-width: 769px)
+    .menu__item a
+        margin-right: 26px
+@media screen and (max-width: 576px)
     .menu__desctop
         display: none
-    .menu__mobile
+    .menu__inner
         display: flex
         justify-content: space-between
         align-items: center
+    .menu__mobile
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+    .menu li
+        padding: 8px 0
+    .menu a
+        margin-right: 0
     .menu
         display: none
+        text-align: center
+        padding-top: 30px
     .menu__burger
+        display: block
+        overflow: hidden
         cursor: pointer
         position: relative
+        margin: 0
+        padding: 0
         width: 40px
-        height: 3px
+        height: 40px
         background-color: #000
-    .menu__burger:after
+
+    .menu__burger span
+        display: block
         position: absolute
-        content: ''
-        width: 40px
+        background-color: #fff
         height: 3px
-        background-color: #000
-        top: -10px
-    .menu__burger:before
+        width: 30px
+        top: 18px
+        left: 5px
+        right: 5px
+        transition: background 0s 0.3s
+    .menu__burger span:after,.menu__burger span:before
         position: absolute
-        content: ''
-        width: 40px
+        display: block
         height: 3px
-        background-color: #000
-        top: 10px
+        width: 100%
+        background: #fff
+        content: ''
+        transition-duration: 0.3s, 0.3s
+        transition-delay: 0.3s, 0s
+    .menu__burger span:after
+        top: -9px
+    .menu__burger span:before
+        bottom: -9px
+    .menu__burger.close span
+        background: none
+    .menu__burger.close span:after
+        top: 0px
+        transform: rotate(45deg)
+    .menu__burger.close span:before
+        bottom: 0px
+        transform: rotate(-45deg)
     .logo
         margin: 0
     .header__title
-        padding-top: 120px
+        padding-top: 80px
         margin-bottom: 30px
     .header__button
         margin-bottom: 140px
